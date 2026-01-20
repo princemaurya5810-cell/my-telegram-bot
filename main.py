@@ -79,5 +79,7 @@ def handle_msg(message):
 if __name__ == "__main__":
     t = Thread(target=run)
     t.start()
-    bot.infinity_polling()
+    bot.infinity_polling(skip_pending=True)
+
+
     
